@@ -1,0 +1,32 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.1",
+    "Newtonsoft.Json": "9.0.1",
+    "SharpZipLib.Portable": "0.86.0.3",
+    "System.Diagnostics.Contracts": "4.3.0",
+    "System.Diagnostics.Process": "4.3.0",
+    "System.Security.Cryptography.Algorithms": "4.3.0",
+    "System.Security.Cryptography.Primitives": "4.3.0",
+    "System.Threading.Thread": "4.3.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "net45",
+      "buildOptions": {
+        "define": [ "NETCORE" ] 
+      }
+    }
+  },
+
+  "buildOptions": {
+    "compile": {
+      "include": [
+        "../Neon.Stack.Global.Shared/**/*.cs",
+        "../Neon.Stack.Common.Shared/**/*.cs"
+      ]
+    }
+  }
+}

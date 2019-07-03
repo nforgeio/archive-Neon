@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>4449f5ba-3589-4016-9dbe-eee2f820ab01</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Neon.Stack.Common.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Collections\ArgDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BlockArray.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\CommandLine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ExecuteResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\HexDumpOption.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Csv.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Process.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Hex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Misc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.OS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Rand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\Stub.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\CryptoExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cryptography\TlsCertificate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\BinderDocumentAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\BinderAttachmentAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\EntityAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\EntityPropertyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IncludeAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IEntityContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\DocLinkMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\DocListMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\DocListWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\EntityListMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\EntityListWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\EntityMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\EntityRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\IPropertyMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\LinkListMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\LinkListWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\LinkMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\ListMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\ListWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Internal\SimpleMapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\NotifyPropertyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\LogActivity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\AssertException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\Covenant.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\ILog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\LogExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\Logger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\LogLevel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Diagnostics\LogManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\BlockStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\LineEnding.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\LinuxPath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\LinuxPermissions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\PreprocessReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\HttpException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\JsonClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\JsonResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\NetworkCidr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\NetworkPorts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\ExponentialRetryPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\IRetryPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\LinearRetryPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\NoRetryPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\TransientDetector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Retry\TransientException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\AsyncAutoResetEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\AsyncManualResetEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\AsyncMutex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\AsyncReaderWriterLock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\HttpClientExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\IOExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\SocketException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\StringBuilderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\SystemExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Timer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\WeakEventController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Time\GatedTimer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Time\GoTimeSpan.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Time\PolledTimer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Time\SysTime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Zip\VirtualDirectoryInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Zip\VirtualFileInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Zip\ZipFileSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NeonHelper.Json.cs" />
+  </ItemGroup>
+</Project>

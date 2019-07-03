@@ -1,0 +1,24 @@
+#------------------------------------------------------------------------------
+# FILE:         Dockerfile.template
+# CONTRIBUTOR:  Jeff Lill
+# COPYRIGHT:    Copyright (c) 2016-2017 by Neon Research,  All rights reserved.
+#
+# This base image deploys a simple Node service that listens on port 80.
+
+FROM        neoncluster/ubuntu-16.04
+MAINTAINER  jeff@lilltek.com
+STOPSIGNAL  SIGTERM
+
+COPY docker-entrypoint.sh   /
+COPY program.js             /
+
+RUN chmod 700 /docker-entrypoint.sh \
+    && chmod 600 /program.js \
+    && curl -sL https://deb.nodesource.com/setup_4.x | bash - \
+    && apt-get install -y nodejs \
+    && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+
+EXPOSE 80
+ENTRYPOINT ["/tini", "--", "/docker-entrypoint.sh"]
+
+

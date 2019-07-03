@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c1244932-1285-4e29-851a-d7e3c9a36ebf</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Neon.Cluster.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\CertificateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\ClusterCredentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\ClusterCredentialsType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\ClusterProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\ProxyManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\CommandBundle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\CommandFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\CommandResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\DockerSecretsManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\NodeProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\RunOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClusterProxy\SshCredentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\CommandStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\ConfigStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\ConfigStepList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\PauseStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\UploadStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\VolumeCreateStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Config\VolumeRemoveStep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Consul\ConsulExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Consul\ConsulInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DebugSecrets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\ClusterDefinitionException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Health\AlwaysHealthyClusterHealthPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Health\IClusterHealthPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Health\PerfectClusterHealthPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LogSources.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\AuthMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\CertificateOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\ClusterDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\ConsulOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\CpuArchitecture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\DashboardOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\DockerOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\DockerOSProperties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\DockerStorageDrivers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\DotnetOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\EnvironmentType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\HostOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\LogOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\NetworkOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\NodeDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\NodeLabels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\NodeRole.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\TargetOS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterDef\VaultOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterSecrets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterState\ClusterState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterState\ClusterStateQueryFlags.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterState\HealthStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ClusterState\NodeState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyDefinition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyHttpBackend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyHttpFrontend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyHttpRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyNameserver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxySettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyTcpBackend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyTcpFrontend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyTcpRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyTimeouts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Proxy\ProxyValidationContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SshClientKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonClusterConst.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonClusterHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonHostPorts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonClusterException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonHosts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NeonSysLogFacility.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NodeHostFolders.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vault\VaultCapabilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vault\VaultClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vault\VaultCredentials.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vault\VaultPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Zip\StaticBytesDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Zip\StaticStringDataSource.cs" />
+  </ItemGroup>
+</Project>
